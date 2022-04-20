@@ -1,12 +1,9 @@
 {
-  "env":{
+  "env": {
     "browser": true,
     "es6": true
   },
-  "extends": [
-    "eslint:recommended",
-    "airbnb-base"
-  ],
+  "extends": ["eslint:recommended", "airbnb-base"],
   "settings": {
     "import/resolver": [
       "node",
@@ -19,10 +16,13 @@
     ]
   },
   "rules": {
-    "import/extensions": ["error", {
-      "js": "never",
-      "ts": "never"
-    }],
+    "import/extensions": [
+      "error",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -32,7 +32,9 @@
       }
     ],
     "comma-dangle": ["error", "never"],
-    "no-console": ["warn", { "allow": ["warn", "error"] }]
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "linebreak-style": ["error", "windows"],
+    "quotes": 1
   },
   "overrides": [
     {
@@ -41,9 +43,7 @@
       "parserOptions": {
         "project": "./tsconfig.json"
       },
-      "plugins": [
-        "@typescript-eslint"
-      ],
+      "plugins": ["@typescript-eslint"],
       "extends": [
         "eslint:recommended",
         "airbnb-base",
@@ -62,10 +62,13 @@
         ]
       },
       "rules": {
-        "import/extensions": ["error", {
-          "js": "never",
-          "ts": "never"
-        }],
+        "import/extensions": [
+          "error",
+          {
+            "js": "never",
+            "ts": "never"
+          }
+        ],
         "import/no-extraneous-dependencies": [
           "error",
           {
@@ -76,27 +79,25 @@
         ],
         "comma-dangle": ["error", "never"],
         "no-console": ["warn", { "allow": ["warn", "error"] }]
-      },
+      }
     },
     {
       "files": ["webpack/**/*.js", "scripts/**/*.js"],
-      "env":{
+      "env": {
         "node": true
       },
-      "extends": [
-        "eslint:recommended",
-        "airbnb-base"
-      ],
+      "extends": ["eslint:recommended", "airbnb-base"],
       "settings": {
-        "import/resolver": [
-          "node"
-        ]
+        "import/resolver": ["node"]
       },
       "rules": {
-        "import/extensions": ["error", {
-          "js": "never",
-          "ts": "never"
-        }],
+        "import/extensions": [
+          "error",
+          {
+            "js": "never",
+            "ts": "never"
+          }
+        ],
         "import/no-extraneous-dependencies": [
           "error",
           {

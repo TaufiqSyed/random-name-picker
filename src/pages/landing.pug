@@ -10,19 +10,19 @@ include ../mixins/icons
   canvas#confetti-canvas.confetti
 
   #lucky-draw
-    img.title(src="~@images/title.svg" alt="Lucky Draw")
-
+    img.title(src="~@images/logo.png" alt="Lucky Draw")
+    h1 GitHub Workshop Winner Draw!
     .slot
       .slot__outer
         .slot__inner
           .slot__shadow
           #reel.reel
 
-      #sunburst.sunburst
-        img(src="~@images/sunburst.svg" alt="sunburst")
+      
 
     button#draw-button.solid-button Draw
-
+  #sunburst.sunburst
+          img(src="~@images/sunburst.svg" alt="sunburst")
   #settings.settings
     #settings-panel.settings__panel
       div.settings__panel__group
